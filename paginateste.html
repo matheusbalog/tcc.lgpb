@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Imagem Temporária</title>
+    <style>
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        #overlay img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="mostrarImagem()">Mostrar Imagem</button>
+
+    <div id="overlay">
+        <img src="caminho/da/sua/imagem.jpg" alt="Imagem Temporária">
+    </div>
+
+    <script>
+        function mostrarImagem() {
+            // Mostrar overlay
+            document.getElementById('overlay').style.display = 'flex';
+
+            // Agendar redirecionamento após 4 segundos
+            setTimeout(function () {
+                window.location.href = 'url-da-outra-pagina.html';
+            }, 4000);
+        }
+    </script>
+
+</body>
+</html>

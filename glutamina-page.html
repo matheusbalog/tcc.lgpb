@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scripts/style.css">
+    <script src="scripts/shoppingcart.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <title>Logo-Albumina</title>
+</head>
+<body>
+    <!-- Navbar :) -->
+    <nav class="navbar-bg">
+        <input type="checkbox" id="menu-toggle">
+        <div class="navbar">
+            <section class="navbar-logo">
+                <span><a href="">LOGO</a></span>
+            </section>
+            <section class="navbar-pages">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <ul>
+                    <li class="navbar-item"><a href="index.html">Início</a></li>
+                    <li class="navbar-item"><a href="products-list.html">Produtos</a></li>
+                    <li class="navbar-item"><a href="about-us.html">Sobre</a></li>
+                    <li class="navbar-item"><a href="scripts/forbiddenScripts/profileListener.php"><img src="img/icon-person.jpg" alt="error!"></a></li>
+                    <li class="navbar-item"><a href="shoppingcart.php"><img src="img/cart-icon.png" alt="error!">(0)</a></li>
+                </ul>
+            </section>
+        </div>
+    
+        <div class="menu-overlay" id="menu-overlay"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="products-list.html">Produtos</a></li>
+                <li><a href="about-us.html">Sobre</a></li>
+                <li><a href="scripts/forbiddenScripts/profileListener.php"><img src="img/icon-person.jpg" alt="error!">Perfil</a></li>
+                <li><a href="shoppingcart.php"><img src="img/cart-icon.png" alt="error!">(0)</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Item Section -->
+    <section class="item-section">
+        <div class="item-section-grid">
+            <div class="item-section-item">
+                <img src="img/glutamina.png" alt="error!">
+            </div>
+            <div class="item-section-item">
+                <h1>Glutamina em Capsulas</h1>
+                <span>R$0,00</span>
+                <button class="item-btn" onclick="adicionarAoCarrinho('Glutamina', 50.00, 'img/glutamina.png')"><a href="shoppingcart.php">Adicionar<br> ao carrinho</a></button>
+                <p>
+                    Explição do Produto(seu conteúdo, quantidade, marca, etc...) Lorem ipsum dolor,
+                    sit amet consectetur adipisicing elit. Sequi non quam voluptatem nulla quae
+                </p>
+                <p>
+                    Explição da função do suplemento (quais resultados podem ser esperados, etc)
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dignissimos vel,
+                    tempora, recusandae at dolores vitae a velit quis perspiciatis similique mollitia
+                    expedita culpa magnam! Dolores amet dolorum deleniti nihil! 
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-item">
+                <span><a href="#">LOGO</a></span>
+            </div>
+            <hr>
+            <div class="footer-item">
+                <span>CNPJ: 00.000.000/0000-00</span><br>
+                <span>TELEFONE: (00) 0000-0000</span><br>
+                <span><img src="img/instagram-icon.png" alt="error!"><img src="img/twitter-icon.png" alt="error!"></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
